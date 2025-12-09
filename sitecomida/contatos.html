@@ -1,0 +1,178 @@
+<html>
+    <title>Contatos</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>As Criadoras - Culinária por Cultura</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['Inter', 'sans-serif'], 
+                            serif: ['Georgia', 'Times New Roman', 'serif'], 
+                        },
+                        colors: {
+                            'primary-dark': '#4C1D95',
+                            'secondary-soft': '#FBEAFF',
+                            'accent-btn': '#EC4899',
+                            'card-border': '#E5E7EB',
+                            'text-detail': '#6B7280',
+                        }
+                    }
+                }
+            }
+        </script>
+        <style>
+
+            body {
+                font-family: 'Inter', sans-serif;
+                background-color: var(--tw-color-secondary-soft);
+                color: var(--tw-color-primary-dark);
+                line-height: 1.6;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+
+            .hero-header {
+                background: linear-gradient(90deg, #F97316 0%, #EC4899 100%);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            }
+
+
+            .profile-card {
+                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                border: 1px solid var(--tw-color-card-border);
+            }
+
+            .profile-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            }
+            
+
+            .profile-header-m, .profile-header-j {
+                height: 150px;
+                background-color: var(--tw-color-primary-dark);
+                position: relative;
+                display: flex;
+                justify-content: center;
+            }
+            
+            .profile-header-m { background-color: #7F1D1D; }
+            .profile-header-j { background-color: #f7b1df; }
+
+
+            .profile-img {
+                width: 130px;
+                height: 130px;
+                border: 6px solid white;
+                position: absolute;
+                top: 50px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            }
+
+
+            .linkedin-btn {
+                background-color: var(--tw-color-accent-btn);
+                transition: background-color 0.3s ease, transform 0.2s ease;
+            }
+
+            .linkedin-btn:hover {
+                background-color: #b6b5b5;
+                transform: scale(1.05);
+            }
+
+            .card-button {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: #2e2e2e;
+                color: white;
+                padding: 10px 15px;
+                border-radius: 8px;
+                font-size: 0.9rem;
+                cursor: pointer;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                transition: background-color 0.3s;
+                z-index: 50;
+            }
+
+            .card-button:hover {
+                background-color: #252525;
+            }
+
+        </style>
+    </head>
+
+    <body class="flex flex-col">
+        
+        <header class="hero-header py-8 text-white text-center">
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight font-serif">
+                Conheça as Criadoras
+            </h1>
+        </header>
+
+        <main class="flex-grow max-w-7xl mx-auto px-6 sm:px-10 py-16">
+            
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                
+                <!-- Card 1: Maria Eduarda -->
+                <div class="profile-card bg-white rounded-3xl overflow-visible shadow-2xl">
+                    
+                    <div class="profile-header-m rounded-t-3xl">
+                        <div class="profile-img rounded-full overflow-hidden">
+                            <img src="img/maria.png" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <div class="p-8 pt-20 text-center">
+                        <h3 class="text-2xl font-extrabold mb-4 text-primary-dark">Maria Eduarda Antônio Couto Silva</h3>
+                        
+                        <div class="text-sm text-text-detail space-y-2 mb-8">
+                            <p><span class="font-semibold text-primary-dark">Idade:</span> 15 anos</p>
+                            <p><span class="font-semibold text-primary-dark">Curso:</span> Informática para Internet</p>
+                            <p><span class="font-semibold text-primary-dark">Escola:</span> Maria Cristina Medeiros</p>
+                            <p><span class="font-semibold text-primary-dark">Série:</span> 1º ano F</p>
+                        </div>
+
+                        <a href="https://www.linkedin.com/in/maria-eduarda-couto-994871387/" class="linkedin-btn inline-block px-10 py-3 text-gray-600 font-semibold rounded-full shadow-lg">Linkedin!</a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Júlia Aparecida -->
+                <div class="profile-card bg-white rounded-3xl overflow-visible shadow-2xl">
+                    
+                    <div class="profile-header-j rounded-t-3xl">
+                        <div class="profile-img rounded-full overflow-hidden">
+                            <img src="img/julia.jpg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <div class="p-8 pt-20 text-center">
+                        <h3 class="text-2xl font-extrabold mb-4 text-primary-dark">Júlia Aparecida Bandeira Rudel</h3>
+                        
+                        <div class="text-sm text-text-detail space-y-2 mb-8">
+                            <p><span class="font-semibold text-primary-dark">Idade:</span> 15 anos</p>
+                            <p><span class="font-semibold text-primary-dark">Curso:</span> Informática para Internet</p>
+                            <p><span class="font-semibold text-primary-dark">Escola:</span> Maria Cristina Medeiros</p>
+                            <p><span class="font-semibold text-primary-dark">Série:</span> 1º ano F</p>
+                        </div>
+
+                        <a href="https://www.linkedin.com/in/julia-rudel-555835387/" class="linkedin-btn inline-block px-10 py-3 text-gray-600 font-semibold rounded-full shadow-lg">Linkedin!</a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+            <a href="paginaprincipal.html" class="card-button">
+            Voltar para a página principal.
+        </a>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+body {
+            font-family: 'Georgia', serif;
+            background-color: #fcfcfc;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        .brazil-header {
+            background-color: #009c3b;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .brazil-header h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 2.5rem; 
+            font-weight: 900; 
+            color: #ffdf00; /* Amarelo no título */
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+        }
+        
+
+        .vertical-bar-green {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.25rem; 
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            padding-left: 1rem;
+            border-left: 8px solid #009c3b; /* Barra verde */
+            color: #222;
+            display: inline-block;
+        }
+        
+
+
+        .vertical-bar-yellow {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            padding-left: 0.75rem;
+            border-left: 4px solid #ffdf00;
+            color: #333;
+            display: block;
+            text-align: center;
+        }
+
+        .separator-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 0.75rem;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.5rem;
+            color: #333;
+            text-align: center;
+        }
+
+        .content-list {
+            list-style-type: none;
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .content-list li {
+            position: relative;
+            margin-bottom: 0.3rem;
+            padding-left: 1rem;
+        }
+
+        .content-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #009c3b;
+            font-size: 1.1rem;
+        }
+
+        .ordered-steps {
+            list-style-type: decimal;
+            margin-left: 2rem;
+            margin-bottom: 2.5rem;
+            color: #444;
+        }
+        
+        .card-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #002776;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+            z-index: 50;
+        }
+
+        .card-button:hover {
+            background-color: #001f56;
+        }

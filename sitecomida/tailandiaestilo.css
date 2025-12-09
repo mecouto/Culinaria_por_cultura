@@ -1,0 +1,117 @@
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fcfcfc;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        .thailand-header {
+            /* Gradiente para simular as 5 faixas da bandeira (Proporções 1:1:2:1:1) */
+            background: linear-gradient(to right, 
+                #A51931 0%, #A51931 16.66%,      /* Vermelho (1/6) */
+                #F4F5F0 16.66%, #F4F5F0 33.33%,  /* Branco (1/6) */
+                #2D2A4A 33.33%, #2D2A4A 66.66%,  /* Azul (2/6, Central) */
+                #F4F5F0 66.66%, #F4F5F0 83.33%,  /* Branco (1/6) */
+                #A51931 83.33%, #A51931 100%     /* Vermelho (1/6) */
+            ); 
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .thailand-header h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 2.5rem; 
+            font-weight: 900; 
+            color: #F4F5F0; 
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3); 
+        }
+        
+        .vertical-bar-blue {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.25rem; 
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            padding-left: 1rem;
+            border-left: 8px solid #2D2A4A;
+            color: #222;
+            display: inline-block;
+        }
+
+        .recipe-title-red {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem; 
+            font-weight: 700;
+            margin-top: 0.5rem; 
+            margin-bottom: 1.5rem; 
+            color: #A51931;
+            display: block;
+            text-align: center; 
+        }
+
+        .recipe-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem; 
+            font-weight: 600;
+            color: #333; 
+            display: block;
+            margin-top: 2.5rem; 
+            margin-bottom: 0.5rem; 
+            padding-left: 0; 
+            text-transform: uppercase;
+        }
+
+        .recipe-section-separator {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.5rem; 
+            margin-bottom: 0; 
+        }
+
+        .content-list {
+            list-style-type: none; 
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .content-list li {
+            position: relative;
+            margin-bottom: 0.3rem;
+            padding-left: 1rem;
+        }
+
+        .content-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2D2A4A;
+            font-size: 1.1rem;
+        }
+
+        .ordered-steps {
+            list-style-type: decimal;
+            margin-left: 2rem;
+            margin-bottom: 2.5rem;
+            color: #444;
+        }
+
+        .card-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #A51931;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+            z-index: 50;
+        }
+
+        .card-button:hover {
+            background-color: #8c142c;
+        }

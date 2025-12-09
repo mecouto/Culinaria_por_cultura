@@ -1,0 +1,211 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Culinária por Cultura</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['Inter', 'sans-serif'],
+                            title: ['Georgia', 'serif'], 
+                        },
+                        colors: {
+                            'grad-start': '#ffc837', 
+                            'grad-mid': '#ff7e5f', 
+                            'grad-end': '#a737be', 
+                        }
+                    }
+                }
+            }
+        </script>
+        <style>
+            body {
+                font-family: 'Inter', sans-serif;
+                background-color: #f7f7f7;
+                min-height: 100vh;
+            }
+
+            .gradient-bg {
+
+                background: linear-gradient(90deg, #ffc837 0%,  30%, #feb47b 60%, #a737be 100%);
+            }
+
+            .hero-section {
+                height: 50vh;
+                min-height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .country-card {
+                position: relative;
+                overflow: hidden;
+                border-radius: 16px; 
+                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+                transition: transform 0.3s ease;
+                cursor: pointer;
+                height: 200px; 
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                padding: 1rem;
+            }
+
+            .country-card:hover {
+                transform: translateY(-4px); 
+            }
+
+            .country-card img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 16px;
+                z-index: 1; 
+            }
+
+            .country-name {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: white;
+                text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+                z-index: 10;
+                margin-bottom: 2rem; 
+            }
+            
+
+            .card-button {
+                z-index: 10;
+                background-color: white;
+                color: #333;
+                border: 1px solid #ddd;
+                padding: 8px 30px;
+                border-radius: 9999px; 
+                font-weight: 600;
+                transition: all 0.2s;
+            }
+
+            .card-button:hover {
+                background-color: #f0f0f0;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .japan-card {
+                background-color: #fff;
+                justify-content: center;
+            }
+            .japan-circle {
+                background-color: #bc002d; 
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .japan-circle .country-name {
+                text-shadow: none;
+                color: white;
+                margin: 0;
+                font-size: 1.2rem;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="top"></div>
+
+
+        <header class="gradient-bg sticky top-0 z-20 shadow-lg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16 text-white">
+
+                <div class="text-xl font-bold tracking-wider">Culinária por Cultura</div>
+
+                <nav>
+                    <ul class="flex space-x-4 sm:space-x-6 text-sm sm:text-base font-semibold">
+                        <li><a href="#top" class="hover:underline transition duration-300">início</a></li> 
+                        <li><a href="#especialidades-section" class="hover:underline transition duration-300">especialidades</a></li>
+                        <li><a href="contatos.html" class="hover:underline transition duration-300">contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-section gradient-bg text-white shadow-xl">
+                <h1 class="font-title text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 p-4 max-w-4xl mx-auto">Explore diversos tipos de culinária</h1>
+                <h2 class="font-sans text-lg sm:text-xl font-light max-w-2xl mx-auto px-6">Descubra um mundo de sabores que vão despertar os seus sentidos</h2>
+                <br>
+                <br>
+            </section>
+
+
+            <section id="especialidades-section" class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+                <h1 class="font-title text-3xl sm:text-4xl font-extrabold text-center mb-12 text-gray-800">Diversidade Culinária por Cultura</h1>
+                
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+
+                    <div class="country-card group">
+
+                        <img src="img/bandeira-do-mexico-og (1).webp" onerror="this.onerror=null;this.src='https://placehold.co/400x200/006847/FFFFFF?text=M%C3%A9xico';" alt="Bandeira do México">
+                        <span class="country-name">México</span>
+                        <a href="mexico.html" class="card-button">saiba mais</a>
+                    </div>
+
+                    <div class="country-card group">
+                        <img src="img/brasil.png" onerror="this.onerror=null;this.src='https://placehold.co/400x200/009C3B/FFFFFF?text=Brasil';" alt="Bandeira do Brasil">
+                        <span class="country-name">Brasil</span>
+                        <a href="brasil.html" class="card-button">saiba mais</a>
+                    </div>
+
+                    <div class="country-card group">
+                        <img src="img/bandeira italia.svg" onerror="this.onerror=null;this.src='https://placehold.co/400x200/008C45/FFFFFF?text=It%C3%A1lia';" alt="Bandeira da Itália">
+                        <span class="country-name">Itália</span>
+                        <a href="italia.html" class="card-button">saiba mais</a>
+                    </div>
+
+                    <div class="country-card group">
+                        <img src="img/tailandia bandeira.png" onerror="this.onerror=null;this.src='https://placehold.co/400x200/A51931/FFFFFF?text=Tail%C3%A2ndia';" alt="Bandeira da Tailândia">
+                        <span class="country-name">Tailândia</span>
+                        <a href="tailandia.html" class="card-button">saiba mais</a>
+                    </div>
+                    
+                    <div class="country-card japan-card">
+                        <div class="japan-circle">
+                            <span class="country-name">Japão</span>
+                        </div>
+                        <a href="japao.html" class="card-button">saiba mais</a>
+                    </div>
+
+                    <div class="country-card group">
+                        <img src="img/bandeira do egito.png" onerror="this.onerror=null;this.src='https://placehold.co/400x200/D32011/FFFFFF?text=Egito';" alt="Bandeira do Egito">
+                        <span class="country-name">Egito</span>
+                        <a href="egito.html" class="card-button">saiba mais</a>
+                    </div>
+                    
+                </div>
+            </section>
+
+        </main>
+
+        <footer id="footer-contact" class="gradient-bg py-16 text-white text-center mt-12 shadow-inner">
+            <h1 class="font-title text-4xl font-extrabold mb-2">Culinária por cultura!</h1>
+            <h2 class="font-sans text-lg font-light">Feito por: Maria Eduarda Antônio Couto Silva e Júlia Aparecida Bandeira Rudel</h2>
+        </footer>
+        
+
+    </body>
+</html>
